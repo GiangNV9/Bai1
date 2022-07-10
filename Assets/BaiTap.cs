@@ -15,6 +15,10 @@ public class BaiTap : MonoBehaviour
 
     int s = 20, t = 5;
     float v;
+
+    int m = 8, n = 2;
+
+    int i = 3, j = 7, k;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +44,32 @@ public class BaiTap : MonoBehaviour
         //Tinh van toc
         v = (float)s / t;
         Debug.Log("Van toc khi di tren quang duong " + s + " km trong thoi gian " + t + " phut la " + v + "km/phut");
+
+        // Bai tap if else
+        if (m + n > 10)
+        {
+            Debug.Log("Hieu cua m va n la " + (m - n));
+        } else if (m + n > 7)
+        {
+            Debug.Log("Tich cua m va n la " + (m * n));
+        }
+        else Debug.Log("Thuong cua m va n la " + ((float)m / n));
+
+        //BT swich case
+        switch (k)
+        {
+            case 1: Debug.Log("Tong cua i, j, k la " + (i + j + k));
+                break;
+            case 2: Debug.Log("Gia tri (i + j) * k la " + ((i + j) * k));
+                break;
+            case 4: Debug.Log("Gia tri cua (i * j) - (i + j) la " + ((i*j) - (i + j)));
+                break;
+            case 0: Debug.Log("Gia tri  cua (i * j * k) + k - i la " + ((i * j * k) + k - i));
+                break;
+            default:Debug.Log("Khong co phep toan nao toa man");
+                break;
+
+        }
 
     }
 

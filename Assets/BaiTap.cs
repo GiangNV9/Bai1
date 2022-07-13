@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaiTap : MonoBehaviour
 {
-    int a = 3, b = 5, c = 11, d = 23;
+    /*int a = 3, b = 5, c = 11, d = 23;
     float trungBinhCong;
 
     int x = 3, y = 5, z = 9, h = 6, chuViTG, dienTichTG;// h la chieu cao tu dinh den canh day z
@@ -19,9 +19,11 @@ public class BaiTap : MonoBehaviour
     int m = 8, n = 2;
 
     int i = 3, j = 7, k;
+    */
     // Start is called before the first frame update
     void Start()
     {
+        /*
         //Tinh trung binh cong 4 so tu nhien
         trungBinhCong = (float)(a + b + c + d) / 4;
         Debug.Log("Trung binh cong cua 4 so " + a + "," + b + "," + c + "," + d + " la : " + trungBinhCong);
@@ -69,7 +71,15 @@ public class BaiTap : MonoBehaviour
             default:Debug.Log("Khong co phep toan nao toa man");
                 break;
 
-        }
+        }*/
+        TinhTongChan(20);
+        Debug.Log(TinhTongChanTVGT(20));
+        TinhTongLe(20);
+        Debug.Log(TinhTongLeTVGT(20));
+        TinhTong(20);
+        Debug.Log(TinhTongTVGT(20));
+        TimSoNguyenTo(20);
+        Debug.Log(TimSoNguyenToTVGT(20));
 
     }
 
@@ -77,5 +87,112 @@ public class BaiTap : MonoBehaviour
     void Update()
     {
         
+    }
+    void TinhTongChan(int n)
+    {
+        int sum = 0;
+        for (int i = 0; i <= n; i+=2)
+        {
+            sum += i;
+            if (n % 2 == 0)
+            {
+                if (i == n) Debug.Log($"Tong cua cac so chan cua day so co so lon nhat la {n} bang {sum}");
+            }else
+            {
+                if (i == n - 1) Debug.Log($"Tong cua cac so chan cua day so co so lon nhat la {n} bang {sum}");
+            }
+        }
+    }
+    int TinhTongChanTVGT(int n)
+    {
+        int sum = 0;
+        for (int i = 0; i <= n; i += 2)
+        {
+            sum += i;
+        }
+        return sum;
+    }
+    void TinhTongLe(int n)
+    {
+        int sum = 0;
+        for (int i = 1; i <= n; i += 2)
+        {
+            sum += i;
+            if (n % 2 == 0)
+            {
+                if (i == n - 1) Debug.Log($"Tong cua cac so chan cua day so co so lon nhat la {n} bang {sum}");
+            }
+            else
+            {
+                if (i == n) Debug.Log($"Tong cua cac so chan cua day so co so lon nhat la {n} bang {sum}");
+            }
+        }
+    }
+    int TinhTongLeTVGT(int n)
+    {
+        int sum = 0;
+        for (int i = 1; i <= n; i += 2)
+        {
+            sum += i;
+        }
+        return sum;
+    }
+    void TinhTong(int n)
+    {
+        int sum = 0;
+        for (int i = 0; i <= n; i++)
+        {
+            sum += i;
+            if (i == n) Debug.Log($"Tong so cua day so co so lon nhat la {n} bang {sum}");
+        }
+    }
+    int TinhTongTVGT(int n)
+    {
+        int sum = 0;
+        for (int i = 0; i <= n; i++)
+        {
+            sum += i;
+        }
+        return sum;
+    }
+    void TimSoNguyenTo(int n)
+    {
+        string str = "";
+        for (int i = 0; i <= n; i++)
+        {
+            int sum = 0;
+            for (int j = 1; j <= i; j++)
+            {
+                if (i % j == 0)
+                {
+                    sum++;
+                }
+            }
+            if (sum == 2)
+            {
+                str += i + " ";
+            }
+        }
+        Debug.Log($"Cac so nguyen to trong day so co so lon nhat bang {n} la {str}");
+    }
+    string TimSoNguyenToTVGT(int n)
+    {
+        string str = "";
+        for (int i = 0; i <= n; i++)
+        {
+            int sum = 0;
+            for (int j = 1; j <= i; j++)
+            {
+                if (i % j == 0)
+                {
+                    sum++;
+                }
+            }
+            if (sum == 2)
+            {
+                str += i + " ";
+            }
+        }
+        return str;
     }
 }

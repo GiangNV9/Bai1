@@ -217,6 +217,8 @@ GameObject:
   - component: {fileID: 1518513241}
   - component: {fileID: 1518513240}
   - component: {fileID: 1518513242}
+  - component: {fileID: 1518513243}
+  - component: {fileID: 1518513244}
   m_Layer: 0
   m_Name: Bai Tap
   m_TagString: Untagged
@@ -257,8 +259,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518513239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0215829982173e4598b6fac9d25a5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1518513243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518513239}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8026373cebd151e42b8b591e92135792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1518513244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518513239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d9bcc912f6f1441b9fc362459bfabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
